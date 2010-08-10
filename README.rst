@@ -14,3 +14,5 @@ It is not intended to be an awesome twitter client, just my first attempt at bui
 I'm putting it up here because it may also help others trying to write Android apps in Scala. At least you can learn from my mistakes :)
 
 I'm using ScalaForAndroid_ because it seemed like the most recently updated and simplest way to start writing apps in Scala.
+
+.. _ScalaForAndroid: http://code.google.com/p/scalaforandroid/
