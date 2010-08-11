@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/container"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <LinearLayout
+        a:orientation="horizontal"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content">
+
+        <EditText
+            a:id="@+id/textField"
+            a:textAppearance="?android:attr/textAppearanceMedium"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:layout_weight="1"
+            a:text="@string/what_are_you_doing" />
+
+        <Button
+            a:id="@+id/button"
+            a:textAppearance="?android:attr/textAppearanceMedium"
+            a:layout_width="wrap_content"
+            a:layout_height="fill_parent"
+            a:text="@string/send" />
+
+    </LinearLayout>
 
     <ListView
-        android:id="@android:id/list"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layoutAnimation="@anim/layout_bottom_to_top_slide" />
+        a:id="@+id/list"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:layout_weight="1" />
 
-</FrameLayout>
+</LinearLayout>
